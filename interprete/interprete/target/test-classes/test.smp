@@ -1,0 +1,22 @@
+program demo {
+  var x;
+  x = 5;
+  println x;                      // 5
+
+  // Lógica (A)
+  println true && !false;         // true
+  println true || false;          // true
+  println (true && false) || !false; // true
+
+  // Aritmética completa (+ - * / ^)
+  println 2 + 3 * 4;              // 14
+  println (2 + 3) * 4;            // 20
+  println 2 ^ 10;                 // 1024
+  println 7 / 2;                  // 3  (entera si ambos son enteros)
+
+  // Funciones (B y C)
+  println powmod(2, 10, 1000);    // 24
+  println seed(42);               // 42
+  println binom(10, 0.5);         // reproducible (p.ej. 7)
+  println binom(5, 0.2);          // reproducible (p.ej. 0)
+}
